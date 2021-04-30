@@ -6,7 +6,7 @@
 #######################################################
 
 MAP
-	NAME Ejemplo9
+	NAME Ejemplo7
 		SIZE 800 600
 		STATUS ON
 		#EXTENT [xmin] [ymin] [xmax] [ymax]
@@ -20,7 +20,7 @@ MAP
 		UNITS METERS
 
 	WEB
-		IMAGEPATH "/var/www/html/sig3/mapserver-sig3/tmp/"
+		IMAGEPATH "/var/www/html/geoinformacion/mapserver-geoinformacion/tmp/"
 		IMAGEURL "tmp/"
 	END
 	
@@ -66,25 +66,11 @@ MAP
 		DATA "barrios_cali.shp"
 		TYPE POLYGON
 		
-		LABELITEM "barrio"
-		LABELCACHE ON
-		
 		CLASS
 			NAME "Barrios Cali"
 			STYLE
 				COLOR 255 123 0
 				OUTLINECOLOR 0 0 0
-			END
-			
-			LABEL
-				COLOR 0 0 0
-				FONT sans
-				TYPE TRUETYPE
-				POSITION CC
-				PARTIALS TRUE
-				SIZE 7
-				BUFFER 1
-				OUTLINECOLOR 255 255 255
 			END
 		END
 	END
@@ -150,7 +136,7 @@ MAP
 			#MAXSUBDIVIDE 2
 			
 			LABELFORMAT '%.0fm'
-			MININTERVAL 1000
+			MININTERVAL 5000
 		END
 	END
 	

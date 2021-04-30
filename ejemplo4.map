@@ -20,7 +20,7 @@ MAP
 		UNITS METERS
 
 	WEB
-		IMAGEPATH "/var/www/html/sig3/mapserver-sig3/tmp/"
+		IMAGEPATH "/var/www/html/geoinformacion/mapserver-geoinformacion/tmp/"
 		IMAGEURL "tmp/"
 	END
 	
@@ -30,7 +30,7 @@ MAP
 		CONNECTIONTYPE postgis
 		NAME "Poligonos"
 		STATUS ON
-		CONNECTION "user=user password=user dbname=sig3 host=localhost port=5432"
+		CONNECTION "user=user password=user dbname=uvruteo host=localhost port=5432"
 		DATA "the_geom FROM barrios_cali as poligonos using unique gid using SRID=3115"
 		TYPE POLYGON
 		CLASS
@@ -45,7 +45,7 @@ MAP
 		CONNECTIONTYPE postgis
 		NAME "Lineas"
 		STATUS ON
-		CONNECTION "user=user password=user dbname=sig3 host=localhost port=5432"
+		CONNECTION "user=user password=user dbname=uvruteo host=localhost port=5432"
 		DATA "the_geom FROM rutas_mio as lineas using unique gid using SRID=3115"
 		TYPE LINE
 		CLASS
@@ -60,7 +60,7 @@ MAP
 		CONNECTIONTYPE postgis
 		NAME "Puntos"
 		STATUS ON
-		CONNECTION "user=user password=user dbname=sig3 host=localhost port=5432"
+		CONNECTION "user=user password=user dbname=uvruteo host=localhost port=5432"
 		DATA "the_geom FROM estaciones_mio as puntos using unique gid using SRID=3115"
 		TYPE POINT
 		CLASS
