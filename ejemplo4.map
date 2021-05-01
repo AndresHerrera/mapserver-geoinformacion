@@ -81,7 +81,7 @@ MAP
 	  CONNECTIONTYPE WMS
 	  METADATA
 	    "wms_srs"             "EPSG:3115"
-	    "wms_name"            "idesc:movi_semaforos"
+	    "wms_name"            "movilidad:mt_sdv_intersecciones_semaforizadas"
 	   "wms_server_version"  "1.1.0"
 	   "wms_format"          "image/png"
 	  END
